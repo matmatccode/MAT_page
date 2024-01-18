@@ -12,54 +12,35 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./assets/css/sign-up.css" />
+    <link rel="stylesheet" href="../css/login.css"/>
   </head>
   <body>
-    <section class="sign-up">
+    <section class="login">
       <div class="container">
         <form action="" id="card">
           <div class="card">
             <div class="label-input">
               <label for="name">Username : </label>
-              <input
-                type="text"
-                id="name"
-                required
-                placeholder="Name..."
-                maxlength="8"
-              />
-            </div>
-            <div class="label-input">
-              <label for="email">Email : </label>
-              <input type="email" id="email" required placeholder="Email..." />
-            </div>
-            <div class="label-input">
-              <label for="fin">FIN : </label>
-              <input
-                type="text"
-                id="fin"
-                required
-                placeholder="FIN..."
-                maxlength="7"
-              />
+              <input type="text" id="name" required placeholder="Name..." />
             </div>
             <div class="label-input eye-div">
-              <label for="password">Create password : </label>
+              <label for="password">Password : </label>
               <input
                 type="password"
                 id="password"
                 required
                 placeholder="Password..."
+                maxlength="20"
               />
               <i class="fa-solid fa-eye-slash slash"></i>
             </div>
             <div class="btn-div">
-              <button type="submit" class="sign-up-btn">Sign up</button>
+              <button type="submit" class="login-btn">Login</button>
             </div>
           </div>
         </form>
       </div>
     </section>
-    <script src="./assets/js/sign-up.js"></script>
+    <script src="../js/login.js"></script>
   </body>
 </html>
