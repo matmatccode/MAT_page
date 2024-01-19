@@ -22,9 +22,9 @@ window.addEventListener("keydown", function (e) {
 let login = document.querySelector(".login-btn");
 let signUp = document.querySelector(".sign-up-btn");
 
-login.addEventListener("click", function () {
-  window.location = "login.html";
-});
-signUp.addEventListener("click", function () {
-  window.location = "sign-up.html";
-});
+// login.addEventListener("click", function () {
+//   window.location = "login.html";
+// });
+// signUp.addEventListener("click", function () {
+//   window.location = "sign-up.html";
+// });
