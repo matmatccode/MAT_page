@@ -1,23 +1,23 @@
-// document.addEventListener("contextmenu", function (e) {
-//   e.preventDefault();
-// });
-// document.addEventListener("mousedown", function (e) {
-//   if (e.button === 2) {
-//     e.preventDefault();
-//   }
-// });
-// document.onkeydown = function (event) {
-//   event = event || window.event;
-//   if (event.keyCode == 123) {
-//     return false;
-//   }
-// };
+document.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
+});
+document.addEventListener("mousedown", function (e) {
+  if (e.button === 2) {
+    e.preventDefault();
+  }
+});
+document.onkeydown = function (event) {
+  event = event || window.event;
+  if (event.keyCode == 123) {
+    return false;
+  }
+};
 
-// window.addEventListener("keydown", function (e) {
-//   if (e.ctrlKey) {
-//     e.preventDefault();
-//   }
-// });
+window.addEventListener("keydown", function (e) {
+  if (e.ctrlKey) {
+    e.preventDefault();
+  }
+});
 let form = document.querySelector("form");
 let allInputs = document.querySelectorAll("input");
 let usersInformation =
