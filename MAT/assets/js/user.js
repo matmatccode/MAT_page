@@ -1,25 +1,25 @@
-let currentMoney = 100000;
+let currentMoney = 100;
 
-// document.addEventListener("contextmenu", function (e) {
-//   e.preventDefault();
-// });
-// document.addEventListener("mousedown", function (e) {
-//   if (e.button === 2) {
-//     e.preventDefault();
-//   }
-// });
-// document.onkeydown = function (event) {
-//   event = event || window.event;
-//   if (event.keyCode == 123) {
-//     return false;
-//   }
-// };
+document.addEventListener("contextmenu", function (e) {
+  e.preventDefault();
+});
+document.addEventListener("mousedown", function (e) {
+  if (e.button === 2) {
+    e.preventDefault();
+  }
+});
+document.onkeydown = function (event) {
+  event = event || window.event;
+  if (event.keyCode == 123) {
+    return false;
+  }
+};
 
-// window.addEventListener("keydown", function (e) {
-//   if (e.ctrlKey) {
-//     e.preventDefault();
-//   }
-// });
+window.addEventListener("keydown", function (e) {
+  if (e.ctrlKey) {
+    e.preventDefault();
+  }
+});
 
 let userİnfo = JSON.parse(localStorage.getItem("Users-information")) || [];
 console.log(userİnfo);
