@@ -1,4 +1,4 @@
-let currentMoney = 100;
+let currentMoney = 100000;
 
 // document.addEventListener("contextmenu", function (e) {
 //   e.preventDefault();

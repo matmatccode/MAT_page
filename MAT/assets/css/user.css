@@ -81,3 +81,18 @@ section {
     margin: 0 5%;
   }
 }
+@media screen and (max-width: 767px) {
+  .header p {
+    font-size: 12px;
+  }
+  .azn {
+    font-size: 6px;
+  }
+  .price {
+    color: rgb(111, 119, 119);
+  }
+  .header h1 {
+    color: rgb(157, 159, 121);
+    font-size: 12px;
+  }
+}
