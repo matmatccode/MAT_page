@@ -96,4 +96,10 @@ section {
     color: rgb(157, 159, 121);
     font-size: 12px;
   }
+  .contact p {
+    font-size: 6px;
+  }
+  .contact a {
+    font-size: 6px;
+  }
 }

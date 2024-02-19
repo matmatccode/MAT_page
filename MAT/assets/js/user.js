@@ -1,41 +1,37 @@
-let currentMoney = 100;
+let currentMoney = 1000000;
 
-document.addEventListener("contextmenu", function (e) {
-  e.preventDefault();
-});
-document.addEventListener("mousedown", function (e) {
-  if (e.button === 2) {
-    e.preventDefault();
-  }
-});
-document.onkeydown = function (event) {
-  event = event || window.event;
-  if (event.keyCode == 123) {
-    return false;
-  }
-};
+// document.addEventListener("contextmenu", function (e) {
+//   e.preventDefault();
+// });
+// document.addEventListener("mousedown", function (e) {
+//   if (e.button === 2) {
+//     e.preventDefault();
+//   }
+// });
+// document.onkeydown = function (event) {
+//   event = event || window.event;
+//   if (event.keyCode == 123) {
+//     return false;
+//   }
+// };
 
-window.addEventListener("keydown", function (e) {
-  if (e.ctrlKey) {
-    e.preventDefault();
-  }
-});
+// window.addEventListener("keydown", function (e) {
+//   if (e.ctrlKey) {
+//     e.preventDefault();
+//   }
+// });
 
-let userİnfo = JSON.parse(localStorage.getItem("Users-information")) || [];
-console.log(userİnfo);
+let a = localStorage.getItem("user");
+let usernamee = a;
+console.log(usernamee);
 
-let id = JSON.parse(localStorage.getItem("user")) || [];
-console.log(id);
+let b = localStorage.getItem("percent");
+let percent = b;
+console.log(percent);
 
-let name = document.querySelector(".name");
+let namee = document.querySelector(".name");
 
 let price = document.querySelector(".price");
 
-userİnfo.forEach((item) => {
-  if (item.userName == id) {
-    console.log("salam");
-    console.log(item);
-    name.innerText = item.userName;
-    price.innerText = (+item.percent * currentMoney) / 100;
-  }
-});
+namee.innerText = usernamee;
+price.innerText = (+percent * currentMoney) / 100;
